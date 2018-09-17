@@ -1,0 +1,15 @@
+faces*
+.idea*
+data/*
+code_base/*
+TODO.md
+*swp
+*pyc
+*.pth
+
+*swn
+*swo
+*swm
+
+*ipynb
+ds_cache*

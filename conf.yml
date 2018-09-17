@@ -1,0 +1,22 @@
+dataset:
+    dir: data
+    batch_size: 20
+model:
+    height: 96
+    width: 96
+    num_keypoints: 30
+    n_channel: 1
+train:
+    train_from: models/fkp_epoch1000.pth
+    num_epochs: 1000
+    loss: torch.nn.MSELoss
+    optimizer: torch.optim.Adam
+    learning_rate: 0.00001
+    momentum: 0.9
+    log_loss_every: 100
+    log_loss_every_epoch: 50
+    persist:
+        model_path: models
+        train_history_path: models/train_history
+        save_model_every_epoch: 50
+        save_model_from_epoch: 100
